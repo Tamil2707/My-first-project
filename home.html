@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile - Responsive (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg: #011239;
+            --accent: #00d4d4;
+            --muted: #bfcde0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: var(--bg);
+            color: #fff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            font-family: "Slabo 27px", serif;
+            font-size: 3.2rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.05;
+        }
+
+        .full {
+            color: #33d6d6;
+            letter-spacing: 4px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        p.lead {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .avatar-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            position: relative;           
+        }
+
+        .avatar {
+            border-radius: 50%;
+            border: 10px solid var(--bg);
+            outline: 8px solid #fff;
+            max-width: 100%;
+            display: block;
+            object-fit:fill;
+            width: 400px;
+            height: 500px;
+            background-color: var(--bg);
+            box-shadow: 2px 2px 20px white, 2px 2px 20px white;
+        }
+
+        h2 {
+            position: relative;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg);
+            animation: name 1.5s forwards;
+        }
+
+        @keyframes name {
+            100% {
+                width: 0%;
+            }
+        }
+
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            margin-right: 0.5rem;
+            text-decoration: none;
+            color: #fff;
+            transition: 1s;
+        }
+
+        .social a {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+
+        }
+
+        .facebook:hover {
+            background: #1877F2;
+            color: white;
+            border: none;
+        }
+
+        .linkedin:hover {
+            background: #042e8f;
+            color: white;
+            border: none;
+        }
+
+        .instagram:hover {
+            background: #E1306C;
+            color: white;
+            border: none;
+        }
+
+        @media (max-width: 991.98px) {
+            h2 {
+                font-size: 2.6rem;
+                text-align: center;
+            }
+
+            .lead {
+                text-align: center;
+            }
+
+            .full {
+                display: block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            .avatar {
+                width: 250px;
+                height: 250px;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+
+            .social a {
+                width: 40px;
+                height: 40px;
+            }
+
+            p.lead {
+                font-size: .95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h2>I'm Tamil Kumaran</h2>
+                    <div class="full">FULLstack Developer</div>
+
+                    <p class="lead">
+                       I create responsive websites using HTML, CSS, JavaScript, and React”, I am a passionate developer currently learning Full Stack Java Development, I enjoy building websites and solving problems.
+                    </p>
+
+                    <div class="mt-3 social">
+                        <a class="facebook" href="https://www.facebook.com/" target="_parent" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="linkedin" href="#" target="_parent" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/" target="_parent"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="avatar-wrap">
+                        <img src="./img/tamil4.jpg" alt="Tamil Kumaran" class="avatar img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

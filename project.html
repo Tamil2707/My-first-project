@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+          :root {
+            --bg: #011239;
+            --accent: #00d4d4;
+            --muted: #bfcde0;
+        }
+
+         html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', system-ui, sans-serif;
+            background: var(--bg);
+            color: #fff;
+            display: flex;
+            width:100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container{
+            background-color: white;
+            color:var(--bg);
+            width: 1000px;
+            border-radius: 20px;
+        }
+        h2{
+            color:var(--accent);
+            font-family: "Slabo 27px", serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+
+        }
+
+        .heat::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-right:15px;
+            border: 2px solid var(--accent);
+        }
+
+        .heat{
+            font-size: 20px;
+        }
+        p{
+            text-indent:20px;
+            font-size: 15px;
+            word-spacing: 5px;
+            font-weight: bold;
+           
+        }
+        li{
+            list-style: circle var(--bg);
+            font-weight: bold;
+            
+        }
+
+         @media (max-width: 991.98px) {
+             .container{
+            background-color: white;
+            color:var(--bg);
+            border-radius: 20px;
+        }
+         h2{
+            color:var(--accent);
+            font-size:30px;
+        }
+         p{
+            font-size: 15px;
+            word-spacing: 5px;
+            font-weight: bold;
+           
+        }
+        .heat{
+            font-size: 20px;
+        }
+         }
+
+         @media (max-width: 575.98px) {
+           .container{
+            background-color: white;
+            color:var(--bg);
+            border-radius: 20px;
+            }
+               h2{
+            color:var(--accent);
+            font-size:20px;
+        }
+         p{
+            font-size: 12px;
+            word-spacing: 5px;
+            font-weight: bold;
+           
+        }
+        .heat{
+            font-size: 15px;
+        }
+         }
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+     <h2>projects</h2>
+
+     <p class="heat">1. VNTMs ( Viruthunagar Transport Management system )</p>
+     <p>This was my college project, developed to help users find suitable buses based on their time. My role was to design and build the frontend using HTML, CSS, and JavaScript. I created clean UI layouts, styled the pages, and added interactive features. This project gave me practical experience in frontend development and teamwork.</p>
+
+     <p class="heat">2. Portfolio Website (HTML & CSS)</p>
+     <p>I designed and developed my own personal portfolio website using HTML and CSS. It includes multiple sections such as Home, About, Skills, Projects, and Contact. Through this project, I improved my understanding of layout design, clean code structure, and responsive web design.</p>
+
+    <p class="heat">3. Google Front Page – Static Website</p>
+     <p>I recreated the Google homepage as a static website using HTML and CSS. This project helped me practice building real-world layouts, managing alignment, and applying accurate styling. It improved my ability to convert UI designs into functional web pages.</p>
+    </div>
+</body>
+</html>

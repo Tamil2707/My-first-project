@@ -1,0 +1,175 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile {
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+}
+
+li {
+    position: relative;
+
+}
+
+.link1,
+.link2,
+.link3,
+.link4 {
+    color: rgb(11, 11, 72) !important;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 20px;
+    padding: 0px;
+    transform: translateX(-200px);
+    animation: slide 0.5s forwards;
+    z-index: 2;
+}
+
+.link1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    border-left: 5px solid #00d4d4;
+    background-image: linear-gradient(to left, white, rgb(11, 11, 112));
+}
+
+.link2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    z-index: -1;
+    height: 100%;
+    border-left: 5px solid #00d4d4;
+    background-image: linear-gradient(to left, white, rgb(11, 11, 112));
+}
+
+.link3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    border-left: 5px solid #00d4d4;
+    background-image: linear-gradient(to left, white, rgb(11, 11, 112));
+}
+
+.link4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    border-left: 5px solid #00d4d4;
+    background-image: linear-gradient(to left, white, rgb(11, 11, 112));
+}
+
+
+li a:hover::before {
+    transition-duration: 1s;
+    cursor: pointer;
+    color: white !important;
+    width: 100%;
+}
+
+li a:hover {
+    color: white !important;
+    position: relative;
+}
+
+.link1 {
+    animation-delay: 2.2s;
+}
+
+.link2 {
+    animation-delay: 2.4s;
+}
+
+.link3 {
+    animation-delay: 2.6s;
+}
+
+.link4 {
+    animation-delay: 2.8s;
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(0);
+    }
+}
+
+ul {
+    margin-top: 30px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 100px;
+    display: flex !important;
+    z-index: 100;
+    justify-content: end;
+}
+
+.col img {
+    border: 5px solid rgb(11, 11, 72);
+    border-radius: 50%;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0px 0px 10px black;
+    animation: logo 2s linear;
+}
+
+@media(max-width:576px) {
+    .navbar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: white;
+        width: auto;
+    }
+}
+
+@keyframes logo {
+    from {
+        width: 30px;
+    }
+
+}
+
+.bar {
+    position: relative;
+
+}
+
+.im {
+    background-color: white;
+    max-width: 320px;
+    margin: 0% auto;
+    padding: 10px 0px;
+    border-radius: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 20px;
+    scrollbar-width: none;
+
+}

@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import your from "./image/yourname.mp4";
-import onepiece from "./image/One piece.mp4";
-import demon from "./image/DEmon Slayer.mp4";
-import solo from "./image/Solo leveling.mp4";
-import vinland from "./image/Vinland Saga.mp4";
+import your from "../image/yourname.mp4";
+import onepiece from "../image/One piece.mp4";
+import demon from "../image/Demon Slayer.mp4";
+import solo from "../image/Solo leveling.mp4";
+import vinland from "../image/Vinland Saga.mp4";
 
 function List() {
   const media = [your, onepiece, demon, solo, vinland];

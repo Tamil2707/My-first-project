@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "./image/footimg.jpg"
+import bg from "../image/footimg.jpg"
 function Footer(){
     return(
         <div className="foot">

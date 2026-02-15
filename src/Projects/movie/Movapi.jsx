@@ -10,7 +10,7 @@ function Movapi(){
         let org=await data.json()
         setAll(org.data)
     }
-
+    
     useEffect(()=>{
         api()
     },[])

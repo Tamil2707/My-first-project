@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./User.css"
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Dashboard from './Dashboard'
 
 function Login() {
     const navicate=useNavigate()
@@ -49,7 +50,7 @@ function Login() {
 
             if (logdata.Email == check.data[0].Email) {
                 if (logdata.Password == check.data[0].Password) {
-                    alert("page")
+                    navicate("/Dash",{state:check.data[0].Name})
                 }
                 else {
                     alert("Incorrect password")

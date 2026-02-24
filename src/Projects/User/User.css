@@ -160,3 +160,69 @@
     font-size: 15px;
     color: white;
 }
+
+/* ----------------------------------------------------------- */
+
+.D-box{
+    background:linear-gradient(30deg,blue 50%,black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.D-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.D-container i{
+    color: black;
+    font-size: 500px;
+}
+
+.D-profile{
+    border: 2px solid black;
+    max-width:300px ;
+    max-height: 300px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+}
+
+.D-profile i{
+    color: blue;
+    font-size: 200px;
+}
+
+.D-profile p{
+    font-size: 20px;
+    padding-left: 9px;
+
+}
+
+@media (max-width:700px){
+
+.D-profile i{
+    color: blue !important;
+    font-size: 100px !important;
+}
+
+.D-container i{
+    color: rgb(26, 26, 28);
+    font-size: 300px;
+}
+}
+
+@media (max-width:500px){
+
+.D-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+}

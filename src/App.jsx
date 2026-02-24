@@ -7,6 +7,7 @@ import Movapi from "./Projects/movie/Movapi";
 import Movie from "./Movie";
 import Register from "./Projects/User/Register";
 import Login from "./Projects/User/Login"
+import Dashboard from "./Projects/User/Dashboard";
 function App()
 {
   return(
@@ -19,6 +20,7 @@ function App()
       <Route path="/Movielist" element={<Movie/>}/>
       <Route path="/Register" element={<Register/>}/>
       <Route path="/Login" element={<Login/>}/>
+      <Route path="/Dash" element={<Dashboard/>}/>
 
     </Routes>
     </BrowserRouter>

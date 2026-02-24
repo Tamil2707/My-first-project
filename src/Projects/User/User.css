@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+
+
+.R-m{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.R-in{
+    position: relative;
+}
+
+.R-in label{
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.active label{
+    top: 15px;
+    font-size: 10px;
+}
+
+.active1 label{
+    top: 15px;
+    font-size: 10px;
+}
+
+
+.active2 label{
+   top: 15px;
+    font-size: 10px;
+}
+
+.R-box input{
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.R-box1{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    background:linear-gradient(30deg,blue 50%,black);
+    border-radius: 20px;
+}
+
+.R-box2{
+    border: 3px solid white;
+    padding: 10px;
+    background:linear-gradient(30deg,blue 50%,black);
+}
+
+.R-box{
+    border: 3px solid blue;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background:linear-gradient(30deg,blue 50%,black);
+
+}
+
+.R-h1{
+    text-align: center;
+    border: 6px solid white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin: 10px;
+}
+
+.R-h1 h1{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+.R-in input:focus ~ p{
+    font-size: 12px;
+    top: 10px;
+}
+
+.R-in i{
+    font-size: 10px;
+}
+.R-but{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+.R-but button{
+    width: 245px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    background:linear-gradient(30deg,blue 50%,black)
+
+}
+
+.R-account{
+    text-align: center;
+    color: white;
+}
+
+.R-account span{
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.R-account span:hover{
+    font-size: 17px;
+    color: white;
+}
+
+.R-check input{
+    width: 12px;
+    height: 20px;
+}
+
+.R-c p{
+    font-size: 14px;
+    margin-top: 10px;
+    padding-left: 3px;
+    color: white;
+}
+
+.R-check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.R-c{
+    display: flex;
+}
+
+.R-ch p{
+     font-size: 14px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-decoration:underline ;
+      cursor: pointer;
+}
+
+.R-ch p:hover{
+    font-size: 15px;
+    color: white;
+}
